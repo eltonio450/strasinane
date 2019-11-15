@@ -1,0 +1,23 @@
+{
+  "connection": "default",
+  "collectionName": "programmes",
+  "info": {
+    "name": "programme",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "coach": {
+      "model": "permission",
+      "via": "programmes",
+      "plugin": "users-permissions"
+    }
+  }
+}

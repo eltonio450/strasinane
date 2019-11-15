@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/programmes",
+      "handler": "Programme.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/programmes/count",
+      "handler": "Programme.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/programmes/:id",
+      "handler": "Programme.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/programmes",
+      "handler": "Programme.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/programmes/:id",
+      "handler": "Programme.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/programmes/:id",
+      "handler": "Programme.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

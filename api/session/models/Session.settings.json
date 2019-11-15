@@ -1,0 +1,32 @@
+{
+  "connection": "default",
+  "collectionName": "sessions",
+  "info": {
+    "name": "session",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "coach": {
+      "model": "user",
+      "via": "session",
+      "plugin": "users-permissions"
+    },
+    "athlete": {
+      "model": "permission",
+      "via": "sessions",
+      "plugin": "users-permissions"
+    },
+    "exercices": {
+      "collection": "exercice",
+      "via": "session"
+    }
+  }
+}

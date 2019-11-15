@@ -1,0 +1,22 @@
+{
+  "connection": "default",
+  "collectionName": "exercices",
+  "info": {
+    "name": "exercice",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "session": {
+      "model": "session",
+      "via": "exercices"
+    }
+  }
+}
